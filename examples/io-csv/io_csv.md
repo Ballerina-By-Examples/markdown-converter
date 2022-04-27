@@ -1,0 +1,10 @@
+# Read/write CSV
+
+This sample demonstrates how to read/write from/to a CSV file using the CSV channel of the I/O API.<br/><br/>
+For more information on the underlying module, 
+see the [IO module](https://docs.central.ballerina.io/ballerina/io/latest/).
+
+
+::: code ./examples/io-csv/io_csv.bal :::
+
+::: out ./examples/io-csv/io_csv.out :::

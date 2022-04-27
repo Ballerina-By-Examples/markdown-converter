@@ -1,0 +1,10 @@
+# XSLT transformation
+
+This example demonstrates how XML content can be transformed to HTML using a given XSL transformation.
+For more information on the underlying module,
+see the [XSLT module](https://docs.central.ballerina.io/ballerina/xslt/latest/).
+
+
+::: code ./examples/xslt-transformation/xslt_transformation.bal :::
+
+::: out ./examples/xslt-transformation/xslt_transformation.out :::
