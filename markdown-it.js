@@ -66,38 +66,50 @@ md.use(container, "out", {
 
 // generate nav template
 const generateNavContent = (bbeName, jsonContent) => {
-  let navContent = "";
-  let catContent = "";
-  let chapters = `<li class="chapter-item bal-nav-item affix"></li>`;
-  let categories = "";
-  let prevChapter = "";
-  let expanded = false;
-  let bbeFound = false;
-  let difCatFound = false;
-  let firstCat = true;
+  let prevCategory = "";
+  let chapterNav = "";
+  let categoryNav = "";
+  let mainNav = "";
+  let bbeTitle = "";
 
   let prevBBE = {};
   let nextBBE = {};
-  let bbeTitle = "";
 
-  jsonContent.forEach((category) => {
-    let catName = category.category;
-    if (prevChapter.toLowerCase() !== catName.toLowerCase()) {
-      difCatFound = true;
-    } else if (
-      difCatFound &&
-      prevChapter.toLowerCase() === catName.toLowerCase()
-    ) {
-      difCatFound = false;
+  let bbeFound = false;
+  let expand = false;
+
+  // iterating through the chapters
+  jsonContent.forEach((chapter) => {
+    let categoryName = chapter.category;
+
+    // if category names change
+    if (prevCategory.toLowerCase() !== categoryName.toLowerCase()) {
+      if (chapterNav !== "") {
+        mainNav += `${categoryNav}
+<ol>        
+  ${chapterNav}
+</ol>`;
+
+        chapterNav = "";
+      }
+
+      categoryNav = `<li class="part-title">
+  <div>${categoryName}</div>
+  <a class="toggle-category"><div>❱</div></a>
+</li>`;
+
+      prevCategory = categoryName;
     }
 
-    let title = category.title;
-    let bbeSamples = category.samples;
+    // details of the chapter
+    let title = chapter.title;
+    let bbeSamples = chapter.samples;
     let bbeNav = "";
 
-    bbeSamples.forEach((bbeSample) => {
-      let name = bbeSample["name"];
-      let url = bbeSample["url"];
+    // iterating through bbes
+    bbeSamples.forEach((bbe) => {
+      let name = bbe["name"];
+      let url = bbe["url"];
 
       if (url === bbeName) {
         bbeNav +=
@@ -109,19 +121,20 @@ const generateNavContent = (bbeName, jsonContent) => {
     class="active bal-active"
   >${name}</a>
 </li>`.trim();
-        expanded = true;
-        bbeFound = true;
-        bbeTitle = name;
 
-        catContent = `
-<li class="part-title expanded">
-  <div>${catName}</div>
-  <a class="toggle-category"><div>❱</div></a>
-</li>`.trim();
+        categoryNav = `<li class="part-title expanded">
+<div>${categoryName}</div>
+<a class="toggle-category"><div>❱</div></a>
+</li>`;
+
+        bbeFound = true;
+        expand = true;
+        bbeTitle = name;
       } else {
         if (!bbeFound) prevBBE = { url, name };
-        if (bbeFound && Object.keys(nextBBE).length == 0)
+        else if (bbeFound && Object.keys(nextBBE).length == 0)
           nextBBE = { url, name };
+
         bbeNav +=
           "\n" +
           `
@@ -133,8 +146,8 @@ const generateNavContent = (bbeName, jsonContent) => {
       }
     });
 
-    if (expanded) {
-      categories +=
+    if (expand) {
+      chapterNav +=
         "\n" +
         `
 <li class="chapter-item bal-nav-item expanded">
@@ -147,9 +160,9 @@ const generateNavContent = (bbeName, jsonContent) => {
   </ol>
 </li>`.trim();
 
-      expanded = false;
+      expand = false;
     } else {
-      categories +=
+      chapterNav +=
         "\n" +
         `
 <li class="chapter-item bal-nav-item">
@@ -162,60 +175,23 @@ const generateNavContent = (bbeName, jsonContent) => {
   </ol>
 </li>`.trim();
     }
-
-    if (!firstCat && difCatFound) {
-      if (catContent !== "") {
-        chapters += "\n" + catContent;
-        catContent = "";
-      } else {
-        chapters +=
-          "\n" +
-          `
-<li class="part-title">
-  <div>${prevChapter}</div>
-  <a class="toggle-category"><div>❱</div></a>
-</li>`.trim();
-      }
-      chapters +=
-        "\n" +
-        `
-<ol>
-  ${categories}
-</ol>`.trim();
-      prevChapter = catName;
-    } else if (firstCat) {
-      firstCat = false;
-    }
   });
 
-  if (catContent !== "") {
-    chapters += "\n" + catContent;
-    catContent = "";
-  } else {
-    chapters +=
-      "\n" +
-      `
-<li class="part-title">
-  <div>${prevChapter}</div>
-  <a class="toggle-category"><div>❱</div></a>
-</li>`.trim();
-  }
-  chapters +=
-    "\n" +
-    `
-<ol>
-  ${categories}
-</ol>`.trim();
+  mainNav += `${categoryNav}
+<ol>        
+  ${chapterNav}
+</ol>`;
 
-  navContent = `
-<nav id="sidebar" class="sidebar" aria-label="Table of contents">
-  <div class="sidebar-scrollbox">
-    <ol class="chapter">
-      ${chapters}
-    </ol>
-  </div>
-  <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
-</nav>`.trim();
+  let navContent = `
+  <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+    <div class="sidebar-scrollbox">
+      <ol class="chapter">
+        <li class="chapter-item bal-nav-item affix"></li>
+        ${mainNav}
+      </ol>
+    </div>
+    <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+  </nav>`.trim();
 
   return { bbeTitle, navContent, prevBBE, nextBBE };
 };
@@ -260,7 +236,7 @@ redirect_from:
     xmlns="http://www.w3.org/2000/svg"
     width="20"
     height="20"
-    fill="#545cec"
+    fill="#3ad1ca"
     class="bi bi-arrow-left"
     viewBox="0 0 16 16"
   >
@@ -291,7 +267,7 @@ redirect_from:
     xmlns="http://www.w3.org/2000/svg"
     width="20"
     height="20"
-    fill="#545cec"
+    fill="#3ad1ca"
     class="bi bi-arrow-right"
     viewBox="0 0 16 16"
   >
