@@ -37,7 +37,6 @@ const generatePlaygroundLink = async (line, description) => {
   };
 
   try {
-    const startTime = Date.now();
     sleep(1000);
     const result = await axios({
       url: "https://play.ballerina.io/gists",
@@ -46,9 +45,6 @@ const generatePlaygroundLink = async (line, description) => {
     });
 
     playgroundLink = `https://play.ballerina.io/?gist=${result.data.id}&file=${fileName}`;
-    console.log(
-      `Generated in: ${(Date.now() - startTime) / 1000}s, ${playgroundLink}`
-    );
   } catch (error) {
     console.log(error.response.data);
   }
@@ -254,7 +250,6 @@ const generateNavContent = (bbeName, jsonContent) => {
         ${mainNav}
       </ol>
     </div>
-    <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
   </nav>`.trim();
 
   return { bbeTitle, navContent, prevBBE, nextBBE };
