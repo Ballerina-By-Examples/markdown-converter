@@ -7,7 +7,6 @@ For more information on the underlying package, see the
 [GraphQL package](https://docs.central.ballerina.io/ballerina/graphql/latest/).<br/><br/>
 This example shows a simple GraphQL endpoint that has a single field in the root Query type, which returns a string.
 
-
 ::: code ./examples/graphql-hello-world/graphql_hello_world.bal :::
 
 ::: out ./examples/graphql-hello-world/graphql_hello_world.client.out :::

@@ -10,7 +10,6 @@ can be used to upload files.
 For more information on the underlying package, see the
 [`graphql` package](https://docs.central.ballerina.io/ballerina/graphql/latest/).
 
-
 ::: code ./examples/graphql-file-upload/graphql_file_upload.bal :::
 
 ::: out ./examples/graphql-file-upload/graphql_file_upload.client.out :::

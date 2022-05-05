@@ -21,7 +21,6 @@ and consists of:</p>
 <li>consecutive `text` items never occur in an `xml` value: they are always merged</li>
 </ul>
 
-
 ::: code ./examples/xml-data-model/xml_data_model.bal :::
 
 ::: out ./examples/xml-data-model/xml_data_model.out :::

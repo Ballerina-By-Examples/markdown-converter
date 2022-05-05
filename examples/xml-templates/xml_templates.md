@@ -7,7 +7,6 @@ between a start-tag and an end-tag).
 Interpolated expressions can be in content (`xml` or `string` values) 
 or in attribute values (`string` values).
 
-
 ::: code ./examples/xml-templates/xml_templates.bal :::
 
 ::: out ./examples/xml-templates/xml_templates.out :::

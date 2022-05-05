@@ -14,7 +14,6 @@ match between the two sets.<br/><br/>
 For more information on the underlying module,
 see the [OAuth2 module](https://docs.central.ballerina.io/ballerina/oauth2/latest/).
 
-
 ::: code ./examples/grpc-service-oauth2/grpc_service.proto :::
 
 ::: out ./examples/grpc-service-oauth2/grpc_service.out :::

@@ -5,7 +5,6 @@ Users can configure caching using the `cache` field in the client configurations
 For more information on the underlying module,
 see the [HTTP module](https://docs.central.ballerina.io/ballerina/http/latest/).
 
-
 ::: code ./examples/http-caching-client/http_caching_client.bal :::
 
 ::: out ./examples/http-caching-client/http_caching_client.client.out :::

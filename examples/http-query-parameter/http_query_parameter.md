@@ -7,7 +7,6 @@ param at their convenience <br/><br/>
 For more information on the underlying module, 
 see the [HTTP module](https://docs.central.ballerina.io/ballerina/http/latest/).
 
-
 ::: code ./examples/http-query-parameter/http_query_parameter.bal :::
 
 ::: out ./examples/http-query-parameter/http_query_parameter.client.out :::

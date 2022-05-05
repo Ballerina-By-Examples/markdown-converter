@@ -7,7 +7,6 @@ There is a complexity in making structural typing work with mutation. <br/><br/>
 Immutable basic types (so far): `nil`, `boolean`, `int`, `float`, `string` <br/><br/>
 Mutable basic types (so far): `array`, `map`, and `record`
 
-
 ::: code ./examples/structural-typing/structural_typing.bal :::
 
 ::: out ./examples/structural-typing/structural_typing.out :::

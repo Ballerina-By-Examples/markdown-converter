@@ -8,7 +8,6 @@ client.<br/><br/>
 For more information on the underlying module,
 see the [Auth module](https://docs.central.ballerina.io/ballerina/auth/latest/).
 
-
 ::: code ./examples/http-client-basic-auth/http_client_basic_auth.bal :::
 
 ::: out ./examples/http-client-basic-auth/http_client_basic_auth.out :::

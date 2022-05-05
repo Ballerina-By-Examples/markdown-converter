@@ -8,7 +8,6 @@ of the client.<br/><br/>
 For more information on the underlying module,
 see the [Auth module](https://docs.central.ballerina.io/ballerina/auth/latest/).
 
-
 ::: code ./examples/grpc-client-basic-auth/grpc_client.proto :::
 
 ::: out ./examples/grpc-client-basic-auth/grpc_client.out :::

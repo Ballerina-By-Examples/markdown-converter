@@ -6,7 +6,6 @@ The client metadata is enriched with the `Authorization: Bearer <token>`
 header by passing the `grpc:BearerTokenConfig` for the `auth` configuration
 of the client.
 
-
 ::: code ./examples/grpc-client-bearer-token-auth/grpc_client.proto :::
 
 ::: out ./examples/grpc-client-bearer-token-auth/grpc_client.out :::

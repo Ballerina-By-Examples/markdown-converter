@@ -8,7 +8,6 @@ supported by default in Ballerina, and it is a cumulative metric that represents
 counter whose value can only increase or be reset to zero.<br/><br/>
 For more information about configs and observing applications, see [Observing Ballerina Code](https://ballerina.io/learn/observing-ballerina-code/).
 
-
 ::: code ./examples/counter-metrics/counter_metrics.bal :::
 
 ::: out ./examples/counter-metrics/counter_metrics.client.out :::

@@ -4,7 +4,6 @@ The Ballerina File API contains functions to perform file-system operations.<br/
 For more information on the underlying module, 
 see the [File module](https://docs.central.ballerina.io/ballerina/file/latest/).
 
-
 ::: code ./examples/files/files.bal :::
 
 ::: out ./examples/files/files.out :::

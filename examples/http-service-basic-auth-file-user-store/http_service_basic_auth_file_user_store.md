@@ -1,4 +1,4 @@
-# Service - basic auth file user store
+# Service - Basic Auth file user store
 
 An HTTP service/resource can be secured with Basic Auth and optionally by
 enforcing authorization. Then, it validates the Basic Auth token sent in the
@@ -14,7 +14,6 @@ the two sets.<br/>
 password and optionally assigned scopes as an array.<br/><br/>
 For more information on the underlying module,
 see the [Auth module](https://docs.central.ballerina.io/ballerina/auth/latest/).
-
 
 ::: code ./examples/http-service-basic-auth-file-user-store/http_service_basic_auth_file_user_store.bal :::
 

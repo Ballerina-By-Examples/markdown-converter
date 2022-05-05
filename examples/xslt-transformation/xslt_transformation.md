@@ -1,9 +1,8 @@
 # XSLT transformation
 
-This example demonstrates how XML content can be transformed to HTML using a given XSL transformation.
+The Ballerina `xslt` library contains an API to transform XML content to HTML using XSL transformation.
 For more information on the underlying module,
 see the [XSLT module](https://docs.central.ballerina.io/ballerina/xslt/latest/).
-
 
 ::: code ./examples/xslt-transformation/xslt_transformation.bal :::
 

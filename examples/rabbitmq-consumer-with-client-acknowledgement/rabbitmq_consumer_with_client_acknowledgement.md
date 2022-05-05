@@ -1,13 +1,12 @@
 # Client acknowledgements
 
-In this example, the messages are consumed from an
+The messages are consumed from an
 existing queue using the Ballerina RabbitMQ message listener.
 The received messages are acknowledged manually.
 By default, the ackMode is rabbitmq:AUTO_ACK, which will automatically acknowledge
 all messages once consumed.<br/><br/>
 For more information on the underlying module, 
 see the [RabbitMQ module](https://docs.central.ballerina.io/ballerinax/rabbitmq/latest).
-
 
 ::: code ./examples/rabbitmq-consumer-with-client-acknowledgement/rabbitmq_consumer_with_client_acknowledgement.bal :::
 

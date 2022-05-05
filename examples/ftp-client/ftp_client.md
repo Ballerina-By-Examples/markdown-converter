@@ -6,7 +6,6 @@ content with default configurations using the default port number.<br/><br/>
 For more information on the underlying module, 
 see the [FTP module](https://docs.central.ballerina.io/ballerina/ftp/latest/).
 
-
 ::: code ./examples/ftp-client/ftp_client.bal :::
 
 ::: out ./examples/ftp-client/ftp_client.out :::

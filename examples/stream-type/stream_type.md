@@ -5,7 +5,6 @@ termination value, which is `error` or `nil`. The type `stream<T,E>` is a `strea
 sequence are type `T` and termination value is type `E`. `stream<T>` means `stream<T,()>`. The `stream` type
 is a separate basic type, but like an object.
 
-
 ::: code ./examples/stream-type/stream_type.bal :::
 
 ::: out ./examples/stream-type/stream_type.out :::

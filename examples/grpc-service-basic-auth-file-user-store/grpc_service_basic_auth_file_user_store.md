@@ -15,7 +15,6 @@ password and optionally assigned scopes as an array.<br/><br/>
 For more information on the underlying module,
 see the [Auth module](https://docs.central.ballerina.io/ballerina/auth/latest/).
 
-
 ::: code ./examples/grpc-service-basic-auth-file-user-store/grpc_service.proto :::
 
 ::: out ./examples/grpc-service-basic-auth-file-user-store/grpc_service.out :::

@@ -10,7 +10,6 @@ name and the field type will be the return type of the remote function.
 For more information on the underlying package, see the
 [`graphql` package](https://docs.central.ballerina.io/ballerina/graphql/latest/).
 
-
 ::: code ./examples/graphql-mutations/graphql_mutations.bal :::
 
 ::: out ./examples/graphql-mutations/graphql_mutations.client.out :::

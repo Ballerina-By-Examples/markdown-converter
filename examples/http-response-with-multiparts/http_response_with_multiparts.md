@@ -6,7 +6,6 @@ entities). If the received parts contain nested parts, you can loop through the 
 For more information on the underlying module, 
 see the [Mime module](https://docs.central.ballerina.io/ballerina/mime/latest/).
 
-
 ::: code ./examples/http-response-with-multiparts/http_response_with_multiparts.bal :::
 
 ::: out ./examples/http-response-with-multiparts/http_response_with_multiparts.client.out :::

@@ -6,7 +6,6 @@ The immutable flag is fixed at the time of construction. Attempting to mutate an
 causes a panic at runtime. Immutability is deep: an immutable structure can only have immutable
 members. An immutable value is safe for concurrent access without locking.
 
-
 ::: code ./examples/immutability/immutability.bal :::
 
 ::: out ./examples/immutability/immutability.out :::

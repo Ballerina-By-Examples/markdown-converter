@@ -6,7 +6,6 @@ and print the echoed response.<br/><br/>
 For more information on the underlying module, 
 see the [UDP module](https://docs.central.ballerina.io/ballerina/udp/latest).
 
-
 ::: code ./examples/udp-client/udp_client.bal :::
 
 ::: out ./examples/udp-client/udp_client.out :::

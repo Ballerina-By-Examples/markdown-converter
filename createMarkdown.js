@@ -99,7 +99,8 @@ const generate = () => {
             description = fs
               .readFileSync(fileRelPath, "utf-8")
               .split("// ")
-              .join("");
+              .join("")
+              .trim();
           } else if (file.includes("metatags")) {
             metatags = fs.readFileSync(fileRelPath, "utf-8").trim();
           } else if (file.includes(".proto")) {
@@ -169,4 +170,4 @@ const generate = () => {
 const cmdArguments = process.argv;
 const inputFilePath = cmdArguments[2] ? cmdArguments[2] : "./examples";
 
-generate(inputFilePath);
+generate();

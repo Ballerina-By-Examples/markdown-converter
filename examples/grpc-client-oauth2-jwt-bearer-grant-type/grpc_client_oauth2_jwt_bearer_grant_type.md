@@ -8,7 +8,6 @@ configuration of the client.<br/><br/>
 For more information on the underlying module,
 see the [OAuth2 module](https://docs.central.ballerina.io/ballerina/oauth2/latest/).
 
-
 ::: code ./examples/grpc-client-oauth2-jwt-bearer-grant-type/grpc_client.proto :::
 
 ::: out ./examples/grpc-client-oauth2-jwt-bearer-grant-type/grpc_client.out :::

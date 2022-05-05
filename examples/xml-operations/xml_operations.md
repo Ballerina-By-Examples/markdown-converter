@@ -12,7 +12,6 @@ result is () if there is no such attribute.
 Langlib lang.xml provides other operations.
 Mutate an element using `e.setChildren(x)`.
 
-
 ::: code ./examples/xml-operations/xml_operations.bal :::
 
 ::: out ./examples/xml-operations/xml_operations.out :::

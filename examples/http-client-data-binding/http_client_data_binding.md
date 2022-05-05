@@ -8,7 +8,6 @@ as an `error` (`http:ClientRequestError`, `http:RemoteServerError`) of the clien
 For more information on the underlying module,
 see the [HTTP module](https://docs.central.ballerina.io/ballerina/http/latest/).
 
-
 ::: code ./examples/http-client-data-binding/http_client_data_binding.bal :::
 
 ::: out ./examples/http-client-data-binding/http_client_data_binding.client.out :::

@@ -1,9 +1,8 @@
 # Read/write bytes
 
-This example demonstrates how bytes can be read and written through the I/O APIs.<br/><br/>
+The Ballerina `io` library contains APIs to read/write bytes from/to a file.<br/><br/>
 For more information on the underlying module, 
 see the [IO module](https://docs.central.ballerina.io/ballerina/io/latest/).
-
 
 ::: code ./examples/io-bytes/io_bytes.bal :::
 

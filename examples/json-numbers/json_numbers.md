@@ -11,7 +11,6 @@ Net result is that you can use `json` to exchange full range of all three Baller
 numeric types.
 `-0` is an edge case: represented as `float`.
 
-
 ::: code ./examples/json-numbers/json_numbers.bal :::
 
 ::: out ./examples/json-numbers/json_numbers.out :::

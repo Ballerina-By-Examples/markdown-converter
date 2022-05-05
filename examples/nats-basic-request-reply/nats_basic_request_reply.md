@@ -8,7 +8,6 @@ This is a simple request/reply messaging pattern example.
 For more information on the underlying module, 
 see the [`nats` module](https://docs.central.ballerina.io/ballerinax/nats/latest).
 
-
 ::: code ./examples/nats-basic-request-reply/publisher.bal :::
 
 ::: out ./examples/nats-basic-request-reply/publisher.out :::

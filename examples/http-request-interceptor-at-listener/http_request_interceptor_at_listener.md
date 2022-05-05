@@ -7,7 +7,6 @@ interceptor services before its dispatched to the actual resource in the target
 service. Interceptors engaged at listener level can only have default path. 
 For more information, see the [HTTP module](https://docs.central.ballerina.io/ballerina/http/latest/).
 
-
 ::: code ./examples/http-request-interceptor-at-listener/http_request_interceptor_at_listener.bal :::
 
 ::: out ./examples/http-request-interceptor-at-listener/http_request_interceptor_at_listener.client.out :::

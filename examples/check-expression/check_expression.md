@@ -6,7 +6,6 @@ immediately.
 Type of `check E` does not include `error`.
 The control flow remains explicit.
 
-
 ::: code ./examples/check-expression/check_expression.bal :::
 
 ::: out ./examples/check-expression/check_expression.out :::

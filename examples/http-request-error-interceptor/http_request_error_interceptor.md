@@ -6,7 +6,6 @@ nearest `RequestErrorInterceptor`. However, if there is no `RequestErrorIntercep
 the error response is returned to the client without executing the actual resource in the target service.
 For more information, see the [HTTP module](https://docs.central.ballerina.io/ballerina/http/latest/).
 
-
 ::: code ./examples/http-request-error-interceptor/http_request_error_interceptor.bal :::
 
 ::: out ./examples/http-request-error-interceptor/http_request_error_interceptor.client.out :::

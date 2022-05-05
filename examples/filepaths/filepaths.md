@@ -5,7 +5,6 @@ target operating system.<br/><br/>
 For more information on the underlying module, 
 see the [File module](https://docs.central.ballerina.io/ballerina/file/latest/).
 
-
 ::: code ./examples/filepaths/filepaths.bal :::
 
 ::: out ./examples/filepaths/filepaths.out :::

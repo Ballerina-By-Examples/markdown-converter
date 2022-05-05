@@ -7,7 +7,6 @@ number.<br/><br/>
 For more information on the underlying module, 
 see the [FTP module](https://docs.central.ballerina.io/ballerina/ftp/latest/).
 
-
 ::: code ./examples/sftp-client/sftp_client.bal :::
 
 ::: out ./examples/sftp-client/sftp_client.out :::

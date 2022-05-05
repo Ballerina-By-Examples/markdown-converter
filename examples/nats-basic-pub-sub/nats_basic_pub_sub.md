@@ -8,7 +8,6 @@ This is a simple publish/subscribe messaging pattern example.
 For more information on the underlying module, 
 see the [`nats` module](https://docs.central.ballerina.io/ballerinax/nats/latest).
 
-
 ::: code ./examples/nats-basic-pub-sub/publisher.bal :::
 
 ::: out ./examples/nats-basic-pub-sub/publisher.out :::

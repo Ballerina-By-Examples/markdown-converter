@@ -13,7 +13,6 @@ sets.<br/><br/>
 For more information on the underlying module, 
 see the [JWT module](https://docs.central.ballerina.io/ballerina/jwt/latest/).
 
-
 ::: code ./examples/grpc-service-jwt-auth/grpc_service.proto :::
 
 ::: out ./examples/grpc-service-jwt-auth/grpc_service.out :::

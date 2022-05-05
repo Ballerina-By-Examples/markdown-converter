@@ -7,7 +7,6 @@ be an optional and/or defaultable types.<br/><br/>
 For more information on the underlying package, see the
 [`graphql` package](https://docs.central.ballerina.io/ballerina/graphql/latest/).
 
-
 ::: code ./examples/graphql-input-types/graphql_input_types.bal :::
 
 ::: out ./examples/graphql-input-types/graphql_input_types.client.out :::

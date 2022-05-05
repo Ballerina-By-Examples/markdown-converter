@@ -6,7 +6,6 @@ expose an HTTPS connection.<br/><br/>
 For more information on the underlying module, 
 see the [HTTP module](https://docs.central.ballerina.io/ballerina/http/latest/).
 
-
 ::: code ./examples/http-service-ssl-tls/http_service_ssl_tls.bal :::
 
 ::: out ./examples/http-service-ssl-tls/http_service_ssl_tls.client.out :::

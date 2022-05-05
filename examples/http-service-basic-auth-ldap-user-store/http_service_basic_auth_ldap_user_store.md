@@ -1,4 +1,4 @@
-# Service - basic auth LDAP user store
+# Service - Basic Auth LDAP user store
 
 An HTTP service/resource can be secured with Basic Auth and by enforcing
 authorization optionally. Then, it validates the Basic Auth token sent in
@@ -12,7 +12,6 @@ against the scope included in the user store for at least one match between
 the two sets.<br/><br/>
 For more information on the underlying module,
 see the [Auth module](https://docs.central.ballerina.io/ballerina/auth/latest/).
-
 
 ::: code ./examples/http-service-basic-auth-ldap-user-store/http_service_basic_auth_ldap_user_store.bal :::
 
